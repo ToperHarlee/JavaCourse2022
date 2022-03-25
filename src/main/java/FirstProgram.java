@@ -15,17 +15,24 @@ public class FirstProgram {
         long resMulty = multiplyAndSumma(5);
         System.out.println(resMulty);
 
-        long resDivide= divide(40, 2);
+        long resDivide = divide(40, 2);
         System.out.println(resDivide);
 
-        long resMultyplic= multiplication(40, 232, 490);
+        long resMultyplic = multiplication(40, 232, 490);
         System.out.println(resMultyplic);
 
-        double sqrt= sqrt(40908);
+        double sqrt = sqrt(40908);
         System.out.println(sqrt);
 
-        long resOmLaw= OmLaw(40, 232, 490);
-        System.out.println(resOmLaw);
+        long resOM = OmLaw(40, 2);
+        System.out.println(resOM);
+
+//        long resPow = pow(2, 3);
+//        System.out.println(resPow);
+
+        long resPow = pow(2, 4);
+        System.out.println(resPow);
+
     }
 
     /**
@@ -67,8 +74,24 @@ public class FirstProgram {
         return Math.sqrt(one);
     }
 
-    public static int OmLaw(int arg1, int arg2, int arg3) {
-        int res = arg1 * arg2 / arg2;
-        return  res;
+//    public static int pow(int value, int powValue) {
+//        return (int)  Math.pow(value, powValue);
+//    }
+
+    public static int pow(int value, int powValue) {
+        int result = 1;
+        for (int i = 1; i <= powValue; i++) {
+            result = result * value;
+        }
+        return result;
     }
+
+    public static int OmLaw( int arg2, int arg3) {
+        int i = arg2;
+        int r = arg3;
+        int u =   i / r;
+        return u;
+    }
+
+
 }
