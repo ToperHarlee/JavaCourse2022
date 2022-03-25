@@ -1,6 +1,4 @@
-public class FirstProgram {
-
-    //int  arg1, arg2; тут можно тк ооп//
+public class Result {
 
     public static void main(String[] args) {
         System.out.println("Hello fckn world");
@@ -27,9 +25,6 @@ public class FirstProgram {
         long resOM = OmLaw(40, 2);
         System.out.println(resOM);
 
-//        long resPow = pow(2, 3);
-//        System.out.println(resPow);
-
         long resPow = pow(2, 4);
         System.out.println(resPow);
 
@@ -38,17 +33,8 @@ public class FirstProgram {
 
     }
 
-    /**
-     * метод складывает 2 аргумента и возвращает результат операции
-     * @param arg1
-     * @param arg2
-     * @return результат сложения 2х чисел
-     */
 
     public static int summa(int arg1, int arg2) {
-        //перем для суммы 2х чисел
-        //результат вычисл должен быть совместим по типу с агрументом
-        /*многострочн*/
         int result = arg1 + arg2;
         return result;
     }
@@ -68,8 +54,8 @@ public class FirstProgram {
     }
 
     public static int multiplication(int arg1, int arg2,int arg3) {
-       int result = arg1 * arg2 * arg3;
-       return  result;
+        int result = arg1 * arg2 * arg3;
+        return  result;
     }
 
     public static double sqrt(double arg1) {
@@ -77,9 +63,6 @@ public class FirstProgram {
         return Math.sqrt(one);
     }
 
-//    public static int pow(int value, int powValue) {
-//        return (int)  Math.pow(value, powValue);
-//    }
 
     public static int pow(int value, int powValue) {
         int result = 1;
