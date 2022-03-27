@@ -1,3 +1,5 @@
+package FirstLesson;
+
 public class FirstProgram {
 
     //int  arg1, arg2; тут можно тк ооп//

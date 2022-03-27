@@ -1,6 +1,9 @@
+package SecondPackage;
+
 public class Result {
 
     public static void main(String[] args) {
+
         System.out.println("Hello fckn world");
         long summa = summa(2, 4);
         System.out.println(summa);
@@ -31,6 +34,8 @@ public class Result {
         long resProcent = procent(50, 20);
         System.out.println(resProcent);
 
+        long resCos = cos(50, 20, 30);
+        System.out.println(Math.cos(resCos));
     }
 
 
@@ -84,6 +89,14 @@ public class Result {
         int y = arg2;
         int summ =   x + y;
         return summ / 10;
+    }
+
+    public static int cos(int arg1, int arg2, int arg3) {
+        Integer a = arg1;
+        Integer b = arg2;
+        Integer c = arg3;
+        int res = b * b + c * c - a * a / 2 * b * c;
+        return  res;
     }
 
 }
