@@ -58,8 +58,9 @@ public class StandartPrimitives {
         double a = arg1;
         double b = arg2;
         double c = arg3;
+        String str = "-?\\d+(\\.\\d+)?";
         double discr = Math.pow(a, 2) - 4 * a * c;
-        if(a != '.' || b != '.' || c !='.' ) {
+        if(a != '.' || b != '.' || c !='.') {
            if (discr < 0) {
                System.out.println("нет решений уравнений тк " + discr + "меньше 0");
            } else if (discr == 0) {
@@ -73,4 +74,35 @@ public class StandartPrimitives {
             }
         }
     }
+      //проверка на то что введено чилсо
+    public static boolean isNumeric(String str)
+    {
+        try
+        {
+            double d = Double.parseDouble(str);
+        }
+        catch(NumberFormatException nfe)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    // 1 * 2 * ... * n
+    // 1 != 1 2 != 2 etc
+    // в тз неочевидно что нужны цикл
+
+    public static void factorial(double a) {
+          double res = 1;
+          if (a < 0 ) {
+              System.out.println("факториал не может быть меньше 0");
+          } else if (a == '.' || a == ' ') {
+              System.out.println("факториал не может быть буквенным");
+          } else if (a > 0) {
+               for (int i = 1;  i <= a; i++){
+                   res = res * i;
+               }
+          }
+    }
+
 }
