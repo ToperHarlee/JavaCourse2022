@@ -52,6 +52,7 @@ public class StandartPrimitives {
         // D = b^2 - 4ac
 
         formula(3,5,6);
+        factorial(4);
     }
 
     public static void formula(double arg1, double arg2, double arg3) {
@@ -91,17 +92,23 @@ public class StandartPrimitives {
     // 1 * 2 * ... * n
     // 1 != 1 2 != 2 etc
     // в тз неочевидно что нужны цикл
+    //for (int i = 1;  i <= a; i++){
+    //                   res = res * i;
+    //               }
 
     public static void factorial(double a) {
           double res = 1;
+          double i = 1;
           if (a < 0 ) {
               System.out.println("факториал не может быть меньше 0");
           } else if (a == '.' || a == ' ') {
               System.out.println("факториал не может быть буквенным");
           } else if (a > 0) {
-               for (int i = 1;  i <= a; i++){
-                   res = res * i;
-               }
+              while (i <= a) {
+                  res = res * i;
+                  i++;
+                  System.out.println("факториал " + res);
+              }
           }
     }
 
