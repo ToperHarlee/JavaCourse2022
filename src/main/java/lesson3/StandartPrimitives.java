@@ -1,4 +1,4 @@
-package ThirdLesson;
+package lesson3;
 
 public class StandartPrimitives {
     public static void main(String[] args) {
@@ -53,6 +53,7 @@ public class StandartPrimitives {
 
         formula(3,5,6);
         factorial(4);
+        System.out.println(recursiaFactorial(5));
     }
 
     public static void formula(double arg1, double arg2, double arg3) {
@@ -110,6 +111,14 @@ public class StandartPrimitives {
                   System.out.println("факториал " + res);
               }
           }
+    }
+
+    // через рекурсию
+    public static  int  recursiaFactorial (int number) {
+        if (number == 1) {
+            return 1;
+        }
+        return number * recursiaFactorial( number - 1);
     }
 
 }

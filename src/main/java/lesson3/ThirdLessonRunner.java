@@ -1,4 +1,4 @@
-package ThirdLesson;
+package lesson3;
 
 public class ThirdLessonRunner {
     public static void main(String[] args) {

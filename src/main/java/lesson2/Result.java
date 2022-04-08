@@ -1,4 +1,4 @@
-package SecondPackage;
+package lesson2;
 
 public class Result {
 
