@@ -97,7 +97,7 @@ public class HomeWorkRunner {
 
 
     //trl + alt + n --> videlenie ,etoda
-    private static int[] fiillRandomArr(int arrayLenght) {
+    private static int[] fiillRandomArr(int arrayLenght) {//как аргумент передать метод где задается длинна
         int[] randArr = new int[arrayLenght];
         for (int i = 0; i < randArr.length; i++ ){
             randArr[i] =(int ) Math.round(Math.random() * 1000); // ot 0 do 1
