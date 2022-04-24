@@ -8,7 +8,7 @@ public class HomeWorkRunner {
         //вычислить max min и среднее значение в массивах тремя способами
         // заполнить массив случайными числами Math.random
         //длинна массива запрашивается у пользователя
-        int arrayLenght = getArrayLenght();
+        int arrayLenght = getArrayLenght();//заданная длинна массива в переменную чтобы использовать в других методах
         int[] array = fiillRandomArr(arrayLenght);//сделать возвращаемый массив переменной
         System.out.println(Arrays.toString(array));
         int max = getMaxEl(array);
@@ -110,7 +110,7 @@ public class HomeWorkRunner {
         System.out.println("Введите длинну массива");
         while (!scanner.hasNextInt() || !scanner.hasNextDouble()) {//проверка на то что вводится число
             String text = scanner.next();
-            System.out.println("Введите числовое значение! ");
+            System.out.println("Введите числовое значение! " + text);
         }
         int lengthArrRes = scanner.nextInt();//проверка на то что введено например не -2
         while (lengthArrRes <= 0) {
